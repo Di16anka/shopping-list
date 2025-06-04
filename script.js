@@ -1,19 +1,8 @@
-const list = document.quareSelector('.item');
-const typing = document.quareSelector ('#input');
+const purchase = document.querySelector('#input').onclick = function(event){
+  const list = document.querySelector (
+  if (event.key=='Enter') {
+};
 
-typing.addEventListener ('keydown', function(event) {
-  const text = typing.value;
-  event.key=='Enter';
-
- const newText = document.createElement('div');
-  newText.classList.add('groceries');
-  newText.textContent = text;
-  if (text !='') {
-  list.append(newText);
-  }
-    typing.value='';
- 
-});
     
 /* Новые элементы должны добавляться в список по нажатию на Enter */
 
