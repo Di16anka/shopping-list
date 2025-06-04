@@ -1,9 +1,13 @@
+const shpoppingList =  [];
 const purchase = document.querySelector('#input');
 const list = document.querySelector ('.item');
 
+
     purchase.onclick = function(event) {
       if (event.key == 'Enter') {
+          const newDo = purchase.value;
     };
+        f
         const toDo = document.createElement('li');
 
 /* Новые элементы должны добавляться в список по нажатию на Enter */
