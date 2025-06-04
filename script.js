@@ -1,16 +1,11 @@
-const input =
 const purchase = document.querySelector('#input');
-const toDo = document.createElement('li');
-const list = document.querySelector ('.item'); 
+const list = document.querySelector ('.item');
 
     purchase.onclick = function(event) {
       if (event.key == 'Enter') {
-    list.click();
-};
+    };
+        const toDo = document.createElement('li');
 
-      list.addEventListener ('click', 
-    function done (){
-      if 
 /* Новые элементы должны добавляться в список по нажатию на Enter */
 
 /* Пустые элементы не должны добавляться */
