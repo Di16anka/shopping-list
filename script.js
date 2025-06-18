@@ -1,24 +1,25 @@
 const purchase = document.querySelector('#input');
-const list = document.querySelector('.item');
+const list = document.querySelector('.items');
 
-purchase.onclick = function(event) {
-      if (event.key == 'Enter') {
-    };
-purchase.addEventListener ('click' , addItem); 
-function addItem() {
-    const itemName = purchase.value;
-    if (itemName !== '') {
-       purchase.value = '';
-           
-    }      
-      
-     const toDo = document.createElement('li');
+purchase.addEventListener ('keydown' , function (){
+      purchase.onkeydown = function(event) {
+      if (event.key == 'Enter' || purchase != "") {
+      const toDo = document.createElement('li');
       const text = purchase.value;
       toDo.textContent = text;
       toDo.addEventListener ('click' , function () {
       toDo.classList.add('done');
             list.append (toDo);
       });
+    }
+}
+
+const itemName = purchase.value;
+    if (itemName !== '') {
+       purchase.value = '';     
+    };
+})  
+      
      
             
             
