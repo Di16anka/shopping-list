@@ -3,7 +3,7 @@ const allItems = document.querySelector("#items");
 
 function addItem() {
 const item = document.createElement("h2")
-item.textContent = — ${input.value};
+item.textContent = `— ${input.value}`;
 
 item.addEventListener("click", function () {
 item.classList.toggle("done");
